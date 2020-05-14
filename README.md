@@ -32,6 +32,9 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application
 
 7. Once the download is finished, Click on Damage Analyzer -> Analyzer -> Choose any one of the sample image. This time CoreML model will able to analyze the damage.
 
+### Version
+Swift 5.0S
+
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
 
