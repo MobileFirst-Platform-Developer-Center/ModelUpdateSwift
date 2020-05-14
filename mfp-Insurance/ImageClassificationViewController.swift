@@ -88,17 +88,6 @@ class ImageClassificationViewController: UIViewController {
                 } catch {
                     print("Failed to perform classification.\n\(error.localizedDescription)")
                 }
-//                WLClient.sharedInstance()?.downloadModelUpdate(completionHandler: { (status,resp) in
-//                    if(resp != nil && status != nil) {
-//                        print("votta" + status!);
-//                        HomeViewController.path = resp!
-//                    } else if(resp == nil && status != nil) {
-//                        let alert = UIAlertController(title: "Alert", message: "This Model is not authentic or might be corrupted", preferredStyle: UIAlertController.Style.alert)
-//                        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
-//                     //   self.present(alert, animated: true, completion: nil)
-//                    }
-//
-//                }, showProgressBar: false)
              }
         }
     }
@@ -119,7 +108,7 @@ class ImageClassificationViewController: UIViewController {
                 // Display top classification ranked by confidence in the UI.
                 //self.classificationLabel.text = "Classification: " + classifications[0].identifier
                 var message = ""
-                if ( classifications[0].identifier != "Negative" ) {
+                if ( classifications[0].identifier != "Negative" && self.fetchDamageAmount(damageType: classifications[0].identifier) != 0 ) {
                     message = "Damage Type : " + classifications[0].identifier + "\n" + "Approximate Cost : " + String(self.fetchDamageAmount(damageType: classifications[0].identifier));
                     let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "Add", style: UIAlertAction.Style.default, handler: {(alert: UIAlertAction!) in
@@ -157,7 +146,7 @@ class ImageClassificationViewController: UIViewController {
         } else if (damageType.lowercased() == "motorcycle accident") {
             return 3000
         }
-        return 100;
+        return 0;
     }
     
     // MARK: - Photo Actions
