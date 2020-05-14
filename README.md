@@ -12,7 +12,7 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application
 
 1. Use either Maven, MobileFirst CLI or your IDE of choice to [build and deploy the available `UserLogin` adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/.
 
-    s-  The UserLogin Security Check adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/SecurityCheckAdapters/tree/release80.
+    -  The UserLogin Security Check adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/SecurityCheckAdapters/tree/release80.
 
 2. From a command-line window, navigate to the project's root folder and run the commands:
     - `pod update` followed by `pod install` - to add the MobileFirst SDK.
@@ -33,7 +33,7 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application
 7. Once the download is finished, Click on Damage Analyzer -> Analyzer -> Choose any one of the sample image. This time CoreML model will able to analyze the damage.
 
 ### Version
-Swift 5.0S
+Swift 5.0
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
