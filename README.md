@@ -12,21 +12,21 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application
 
 1. Use either Maven, MobileFirst CLI or your IDE of choice to [build and deploy the available `UserLogin` adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/.
 
- The UserLogin Security Check adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/SecurityCheckAdapters/tree/release80.
+    s-  The UserLogin Security Check adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/SecurityCheckAdapters/tree/release80.
 
 2. From a command-line window, navigate to the project's root folder and run the commands:
- - `pod update` followed by `pod install` - to add the MobileFirst SDK.
- - `mfpdev app register` - to register the application.
+    - `pod update` followed by `pod install` - to add the MobileFirst SDK.
+    - `mfpdev app register` - to register the application.
 
 3. Add the sample images in iOS Simular or physical device. This is located in SampleData folder.
 
 4. Run the application & login with credentials(vittal/vittal). Click on Damage Analyzer -> Analyzer -> Choose any one of the sample image. CoreML model fails to analyze the damage.
 
 5. Now update the CorelML Model Update on Air using MobileFirst Console
- - Open the MobileFirst Operations Console and click the application entry in the left panel.
- - Navigate to Machine Learning tab and click Upload model archive 
- - Choose the `model-update.zip` file which is located inside ModelUpdatePackage foldaer and Click Ok to upload the packaged models.
- - ![Model Update Screenshot](modelupdate.png)
+    - Open the MobileFirst Operations Console and click the application entry in the left panel.
+    - Navigate to Machine Learning tab and click Upload model archive 
+    - Choose the `model-update.zip` file which is located inside ModelUpdatePackage foldaer and Click Ok to upload the packaged models.
+    - ![Model Update Screenshot](modelupdate.png)
 
 6. Kill and Re-run the application, User can notice the model gets downloaded in the Home page.
 
