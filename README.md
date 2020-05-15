@@ -25,7 +25,7 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application
 5. Now update the CorelML Model Update on Air using MobileFirst Console
     - Open the MobileFirst Operations Console and click the application entry in the left panel.
     - Navigate to Machine Learning tab and click Upload model archive 
-    - Choose the `model-update.zip` file which is located inside ModelUpdatePackage foldaer and Click Ok to upload the packaged models.
+    - Choose the `model-update.zip` file which is located inside ModelUpdatePackage folder and Click Ok to upload the packaged models.
     - ![Model Update Screenshot](modelupdate.png)
 
 6. Kill and Re-run the application, User can notice the model gets downloaded in the Home page.
